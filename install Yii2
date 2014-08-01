@@ -1,0 +1,31 @@
+Setup Yii2 on Linux platform
+
+Prerequisite
+composer must be installed.
+
+#### Clone repository ####
+git clone https://github.com/yiisoft/yii2
+
+#### Setup Yii2 advanced application ####
+#### Change to advanced direcoty ####
+cd yii2/apps/advanced
+#### Install dependancies ####
+composer install
+### Setup Yii2 advanced application in development mode ####
+php init --env=Development --overwrite=n
+
+Run:
+Set cookieValidationKey in yii2/apps/advanced/frontend/config/main.php
+http://localhost/yii2/apps/advanced/frontend/web/index.php
+
+#### Setup Yii2 basic application ####
+#### Change to basic direcoty ####
+cd yii2/apps/basic
+#### Install dependancies ####
+composer install
+### Setup Yii2 basic application in development mode ####
+php init --env=Development --overwrite=n
+
+Run:
+Set cookieValidationKey in yii2/apps/basic/config/main.php
+http://localhost/yii2/apps/basic/web/index.php
